@@ -40,6 +40,7 @@ public class ModuleAdapter extends ArrayAdapter<Module> {
         ivProj = (ImageView) rowView.findViewById(R.id.ivProg);
 
         Module currentFood = module.get(position);
+tvCode.setText(module.get(position).getModuleCode());
 
         // Set the image to star or nostar accordingly
         if(currentFood.isProj()) {
